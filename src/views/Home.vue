@@ -191,25 +191,173 @@
 
         <v-tabs-window-item value="one">
           <v-row class="w-100">
-            <v-col cols="4" flat class="pa-0 px-3" v-for="i in 5" :key="i">
+
+            <v-col cols="4" flat class="pa-0 pa-3">
               <v-card flat class="offer_card">
                 <div class="offer_card__head">
-                  <img src="" alt="">
+                  <img :src="require('@/assets/offer_card_1.jpg')" alt="">
+                  <span>14 FEB 2022</span>
                 </div>
                 <v-card-text class="offer_card__body">
-                  helo word
+                  <p class="d-flex align-center ga-3"><span class="px-4">Relax</span> 3 Days, 3 Nights</p>
+                  <h3>Loga Sea</h3>
+                  <div class="d-flex align-center justify-space-between price">
+                    <div class="price_value"><span class="d-inline">700$</span>/Person</div>
+                    <router-link to="#" class="link">Book Now</router-link>
+                  </div>
                 </v-card-text>
               </v-card>
             </v-col>
+
+            <v-col cols="4" flat class="pa-0 pa-3">
+              <v-card flat class="offer_card">
+                <div class="offer_card__head">
+                  <img :src="require('@/assets/offer_card_2.jpg')" alt="">
+                  <span>18 JUN 2022</span>
+                </div>
+                <v-card-text class="offer_card__body">
+                  <p class="d-flex align-center ga-3"><span class="px-4 indigo">Adventure</span> 4 Days, 3 Nights</p>
+                  <h3>Ansgar Scheffold</h3>
+                  <div class="d-flex align-center justify-space-between price">
+                    <div class="price_value"><span class="d-inline">400$</span>/Person</div>
+                    <router-link to="#" class="link">Book Now</router-link>
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-col>
+
+            <v-col cols="4" flat class="pa-0 pa-3">
+              <v-card flat class="offer_card">
+                <div class="offer_card__head">
+                  <img :src="require('@/assets/offer_card_3.jpg')" alt="">
+                  <span>22 DEC 2022</span>
+                </div>
+                <v-card-text class="offer_card__body">
+                  <p class="d-flex align-center ga-3"><span class="px-4">Relax</span> 7 Days, 6 Nights</p>
+                  <h3>Lona X</h3>
+                  <div class="d-flex align-center justify-space-between price">
+                    <div class="price_value"><span class="d-inline">340$</span>/Person</div>
+                    <router-link to="#" class="link">Book Now</router-link>
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-col>
+
           </v-row>
         </v-tabs-window-item>
 
         <v-tabs-window-item value="two">
-          Two
+          <v-row class="w-100">
+
+            <v-col cols="4" flat class="pa-0 pa-3">
+              <v-card flat class="offer_card">
+                <div class="offer_card__head">
+                  <img :src="require('@/assets/offer_card_1.jpg')" alt="">
+                  <span>14 FEB 2022</span>
+                </div>
+                <v-card-text class="offer_card__body">
+                  <p class="d-flex align-center ga-3"><span class="px-4">Relax</span> 3 Days, 3 Nights</p>
+                  <h3>Loga Sea</h3>
+                  <div class="d-flex align-center justify-space-between price">
+                    <div class="price_value"><span class="d-inline">700$</span>/Person</div>
+                    <router-link to="#" class="link">Book Now</router-link>
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-col>
+
+            <v-col cols="4" flat class="pa-0 pa-3">
+              <v-card flat class="offer_card">
+                <div class="offer_card__head">
+                  <img :src="require('@/assets/offer_card_2.jpg')" alt="">
+                  <span>18 JUN 2022</span>
+                </div>
+                <v-card-text class="offer_card__body">
+                  <p class="d-flex align-center ga-3"><span class="px-4 indigo">Adventure</span> 4 Days, 3 Nights</p>
+                  <h3>Ansgar Scheffold</h3>
+                  <div class="d-flex align-center justify-space-between price">
+                    <div class="price_value"><span class="d-inline">400$</span>/Person</div>
+                    <router-link to="#" class="link">Book Now</router-link>
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-col>
+
+            <v-col cols="4" flat class="pa-0 pa-3">
+              <v-card flat class="offer_card">
+                <div class="offer_card__head">
+                  <img :src="require('@/assets/offer_card_3.jpg')" alt="">
+                  <span>22 DEC 2022</span>
+                </div>
+                <v-card-text class="offer_card__body">
+                  <p class="d-flex align-center ga-3"><span class="px-4">Relax</span> 7 Days, 6 Nights</p>
+                  <h3>Lona X</h3>
+                  <div class="d-flex align-center justify-space-between price">
+                    <div class="price_value"><span class="d-inline">340$</span>/Person</div>
+                    <router-link to="#" class="link">Book Now</router-link>
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-col>
+
+          </v-row>
         </v-tabs-window-item>
 
         <v-tabs-window-item value="three">
-          Three
+          <v-row class="w-100">
+
+            <v-col cols="4" flat class="pa-0 pa-3">
+              <v-card flat class="offer_card">
+                <div class="offer_card__head">
+                  <img :src="require('@/assets/offer_card_1.jpg')" alt="">
+                  <span>14 FEB 2022</span>
+                </div>
+                <v-card-text class="offer_card__body">
+                  <p class="d-flex align-center ga-3"><span class="px-4">Relax</span> 3 Days, 3 Nights</p>
+                  <h3>Loga Sea</h3>
+                  <div class="d-flex align-center justify-space-between price">
+                    <div class="price_value"><span class="d-inline">700$</span>/Person</div>
+                    <router-link to="#" class="link">Book Now</router-link>
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-col>
+
+            <v-col cols="4" flat class="pa-0 pa-3">
+              <v-card flat class="offer_card">
+                <div class="offer_card__head">
+                  <img :src="require('@/assets/offer_card_2.jpg')" alt="">
+                  <span>18 JUN 2022</span>
+                </div>
+                <v-card-text class="offer_card__body">
+                  <p class="d-flex align-center ga-3"><span class="px-4 indigo">Adventure</span> 4 Days, 3 Nights</p>
+                  <h3>Ansgar Scheffold</h3>
+                  <div class="d-flex align-center justify-space-between price">
+                    <div class="price_value"><span class="d-inline">400$</span>/Person</div>
+                    <router-link to="#" class="link">Book Now</router-link>
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-col>
+
+            <v-col cols="4" flat class="pa-0 pa-3">
+              <v-card flat class="offer_card">
+                <div class="offer_card__head">
+                  <img :src="require('@/assets/offer_card_3.jpg')" alt="">
+                  <span>22 DEC 2022</span>
+                </div>
+                <v-card-text class="offer_card__body">
+                  <p class="d-flex align-center ga-3"><span class="px-4">Relax</span> 7 Days, 6 Nights</p>
+                  <h3>Lona X</h3>
+                  <div class="d-flex align-center justify-space-between price">
+                    <div class="price_value"><span class="d-inline">340$</span>/Person</div>
+                    <router-link to="#" class="link">Book Now</router-link>
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-col>
+
+          </v-row>
         </v-tabs-window-item>
 
       </v-tabs-window>

@@ -228,6 +228,8 @@ a {
 }
 
 .offer {
+    margin-bottom: 240px;
+
     &__title {
         margin-bottom: 60px;
     }
@@ -272,5 +274,73 @@ a {
     &_card {
         border-radius: 50px;
         box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.05);
+
+        &__head {
+            padding: 21px 60px 20px 27px;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 273px;
+                object-fit: cover;
+                border-radius: 50px;
+            }
+
+            span {
+                color: rgba(0, 0, 0, 0.5);
+                font-size: 18px;
+                letter-spacing: 9px;
+                position: absolute;
+                top: 50px;
+                right: 0px;
+                transform: rotateZ(90deg)  translate(50%, -270%);
+                white-space: nowrap;
+            }
+        }
+
+        &__body {
+            padding: 0 27px 25px 46px;
+
+            p {
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.5);
+
+                span {
+                    color: #F178B6;
+                    border-radius: 100px;
+                    background: #FCDDEC;
+
+                    &.indigo {
+                        color: #7879F1;
+                        background: #F1F1FD;
+                    }
+                }
+            }
+
+            h3 {
+                margin: 10px 0 4px;
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            .price_value {
+                font-size: 18px;
+                color: rgba(0, 0, 0, 0.5);
+
+                span {
+                    font-size: 25px;
+                    font-weight: 500;
+                    color: #000;
+                }
+            }
+
+            .link {
+                background: #F2F6FF;
+                padding: 13px 19px;
+                color: #3E86F5;
+                border-radius: 10px;
+                font-size: 14px;
+            }
+        }
     }
 }
