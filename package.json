@@ -8,7 +8,10 @@
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
+    "moment": "^2.30.1",
     "roboto-fontface": "*",
+    "sass": "^1.76.0",
+    "sass-loader": "^14.2.1",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
     "vuetify": "^3.0.0-beta.0",
