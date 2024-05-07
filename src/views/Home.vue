@@ -591,6 +591,16 @@
   </section>
   <!-- Slider end -->
 
+  <!-- Discount -->
+  <section class="discount">
+    <main-container class="text-center d-flex flex-column align-center ga-10 discount_content">
+      <img :src="require('@/assets/earth.jpg')" width="100%" height="100%" alt="">
+      <h2 class="text-h2 text-white">Don’t Miss The 50% Discount if <br/> You register Today</h2>
+      <router-link to="#">Register Today</router-link>
+    </main-container>
+  </section>
+  <!-- Discount end -->
+
 </template>
 
 <script>
