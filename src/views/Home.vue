@@ -552,14 +552,59 @@
   </section>
   <!-- Destination end -->
 
+  <!-- Slider -->
+  <section class="slider">
+    <main-container>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" v-for="i in 5" :key="i">
+            <v-card flat class="text-center">
+              <img :src="require('@/assets/slider_card_icon.svg')" class="icon" alt="">
+              <p>Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
+              <h3>-Vand D</h3>
+              <h4>Happy Treloo</h4>
+              <div class="avatar">
+                <img :src="require('@/assets/avatar_bg.svg')" alt="" class="bg">
+                <img :src="require('@/assets/user_1.png')" alt="" class="rounded-circle user" width="100" height="100">
+                <span class="d-flex align-center px-1 rounded-pill">
+                  <img :src="require('@/assets/star.svg')" alt="">
+                  4.5
+                </span>
+              </div>
+            </v-card>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-center ga-5">
+        <v-btn flat @click="swp.slidePrev()">
+          <svg width="15" height="23" viewBox="0 0 15 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.1429 1.28564L2.85715 11.5714L13.1429 21.8571" stroke="#3E86F5" stroke-width="3"/>
+          </svg>
+        </v-btn>
+        <v-btn flat @click="swp.slideNext()">
+          <svg width="15" height="23" viewBox="0 0 15 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.85714 1.28564L12.1429 11.5714L1.85714 21.8571" stroke="#3E86F5" stroke-width="3"/>
+          </svg>
+        </v-btn>
+      </div>
+    </main-container>
+  </section>
+  <!-- Slider end -->
+
 </template>
 
 <script>
 import moment from 'moment'
 import homeImg from '@/assets/home_bg.jpg'
 
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css';
+
 export default {
   name: 'Home',
+  components: {
+    Swiper,
+  },
   data () {
     return {
       home_img: homeImg,
@@ -570,6 +615,7 @@ export default {
       retrn: new Date(),
       offerTab: null,
       destinationTab: null,
+      swp: null,
     }
   },
   computed: {
@@ -579,6 +625,13 @@ export default {
     formattedRetrn () {
         return this.retrn ? moment(this.retrn).format('DD MMM, ddd') : ''
     },
-  }
+  },
+  mounted () {
+    this.swp = new Swiper('.slider .swiper', {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      loop: true,
+    });
+  },
 };
 </script>

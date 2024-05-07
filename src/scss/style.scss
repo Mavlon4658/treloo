@@ -520,3 +520,85 @@ a {
     }
 }
 // Destination end
+
+.slider {
+    margin-bottom: 136px;
+
+    .swiper {
+        padding-bottom: 85px;
+    }
+
+    .v-card {
+        border-radius: 50px;
+        padding: 84px 25px 65px 47px;
+        position: relative;
+        overflow: visible;
+
+        .icon {
+            position: absolute;
+            top: 36px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 10px;
+            line-height: 209%;
+            color: #000;
+        }
+
+        h3 {
+            color: #3E86F5;
+            font-size: 20px;
+            line-height: 209%;
+            font-weight: 500;
+        }
+
+        h4 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 209%;
+            color:rgba(0, 0, 0, .5);
+        }
+
+        .avatar {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+
+            .bg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: -1;
+            }
+
+            .user {
+                object-fit: cover;
+            }
+
+            span {
+                position: absolute;
+                top: 7px;
+                right: -12px;
+                background: #fff;
+                gap: 2px;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .v-btn {
+        width: 40px;
+        height: 40px;
+        min-width: auto;
+        border-radius: 15px;
+        border: 2px solid rgba(62, 135, 245, 0.5);
+        background: transparent;
+    }
+}
