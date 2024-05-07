@@ -402,6 +402,156 @@
   </section>
   <!-- Travel end -->
 
+  <!-- Destination -->
+  <section class="destination">
+    <main-container>
+      <h2 class="text-h2 text-center mb-10">Recommended Destination</h2>
+
+      <!-- Tab head -->
+      <v-tabs
+        v-model="destinationTab"
+        bg-color="transparent"
+        class="tab_head"
+      >
+        <v-tab value="one">Populor</v-tab>
+        <v-tab value="two">Adventure</v-tab>
+        <v-tab value="three">Beath</v-tab>
+      </v-tabs>
+      <!-- Tab head end -->
+
+      <!-- Tab body -->
+      <v-tabs-window v-model="destinationTab">
+        <v-tabs-window-item value="one">
+          <v-row>
+            <v-col cols="3" class="pa-0">
+              <v-card flat class="ma-3">
+                <div class="card_head">
+                  <img :src="require('@/assets/destination_card_1.jpg')" alt="" class="main_img">
+                  <p class="d-flex align-center">
+                    <img :src="require('@/assets/star.svg')" alt="">
+                    <span>3.4</span>
+                  </p>
+                </div>
+                <div class="card_body">
+                  <h3>Kina Mountain</h3>
+                  <p class="d-flex align-start">
+                    <img :src="require('@/assets/location.svg')" alt="">
+                    <span>Cambodia</span>
+                  </p>
+                </div>
+              </v-card>
+            </v-col>
+
+            <v-col cols="3" class="pa-0">
+              <v-card flat class="ma-3">
+                <div class="card_head">
+                  <img :src="require('@/assets/destination_card_2.jpg')" alt="" class="main_img">
+                  <p class="d-flex align-center">
+                    <img :src="require('@/assets/star.svg')" alt="">
+                    <span>4.5</span>
+                  </p>
+                </div>
+                <div class="card_body">
+                  <h3>Kina Mountain</h3>
+                  <p class="d-flex align-start">
+                    <img :src="require('@/assets/location.svg')" alt="">
+                    <span>Cambodia</span>
+                  </p>
+                </div>
+              </v-card>
+            </v-col>
+
+            <v-col cols="3" class="pa-0">
+              <v-card flat class="ma-3">
+                <div class="card_head">
+                  <img :src="require('@/assets/destination_card_3.jpg')" alt="" class="main_img">
+                  <p class="d-flex align-center">
+                    <img :src="require('@/assets/star.svg')" alt="">
+                    <span>4.2</span>
+                  </p>
+                </div>
+                <div class="card_body">
+                  <h3>Kina Mountain</h3>
+                  <p class="d-flex align-start">
+                    <img :src="require('@/assets/location.svg')" alt="">
+                    <span>Cambodia</span>
+                  </p>
+                </div>
+              </v-card>
+            </v-col>
+
+            <v-col cols="3" class="pa-0">
+              <v-card flat class="ma-3">
+                <div class="card_head">
+                  <img :src="require('@/assets/destination_card_4.jpg')" alt="" class="main_img">
+                  <p class="d-flex align-center">
+                    <img :src="require('@/assets/star.svg')" alt="">
+                    <span>3.5</span>
+                  </p>
+                </div>
+                <div class="card_body">
+                  <h3>Kina Mountain</h3>
+                  <p class="d-flex align-start">
+                    <img :src="require('@/assets/location.svg')" alt="">
+                    <span>Cambodia</span>
+                  </p>
+                </div>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-tabs-window-item>
+
+        <v-tabs-window-item value="two">
+          <v-row>
+            <v-col cols="3" class="pa-0" v-for="i in 4" :key="i">
+              <v-card flat class="ma-3">
+                <div class="card_head">
+                  <img :src="require('@/assets/destination_card_1.jpg')" alt="" class="main_img">
+                  <p class="d-flex align-center">
+                    <img :src="require('@/assets/star.svg')" alt="">
+                    <span>3.4</span>
+                  </p>
+                </div>
+                <div class="card_body">
+                  <h3>Kina Mountain</h3>
+                  <p class="d-flex align-start">
+                    <img :src="require('@/assets/location.svg')" alt="">
+                    <span>Cambodia</span>
+                  </p>
+                </div>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-tabs-window-item>
+
+        <v-tabs-window-item value="three">
+          <v-row>
+            <v-col cols="3" class="pa-0" v-for="i in 4" :key="i">
+              <v-card flat class="ma-3">
+                <div class="card_head">
+                  <img :src="require('@/assets/destination_card_1.jpg')" alt="" class="main_img">
+                  <p class="d-flex align-center">
+                    <img :src="require('@/assets/star.svg')" alt="">
+                    <span>3.4</span>
+                  </p>
+                </div>
+                <div class="card_body">
+                  <h3>Kina Mountain</h3>
+                  <p class="d-flex align-start">
+                    <img :src="require('@/assets/location.svg')" alt="">
+                    <span>Cambodia</span>
+                  </p>
+                </div>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-tabs-window-item>
+      </v-tabs-window>
+      <!-- Tab body end -->
+    </main-container>
+  </section>
+  <!-- Destination end -->
+
 </template>
 
 <script>
@@ -418,7 +568,8 @@ export default {
       goingTo: 'New York',
       leave: new Date(),
       retrn: new Date(),
-      offerTab: null
+      offerTab: null,
+      destinationTab: null,
     }
   },
   computed: {
