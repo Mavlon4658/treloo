@@ -366,6 +366,42 @@
   </section>
   <!-- Offers end -->
 
+  <!-- Travel -->
+  <section class="travel">
+    <main-container>
+      <v-row class="justify-space-between align-center">
+        <v-col cols="5" class="position-relative travel_card pa-0">
+          <img :src="require('@/assets/travel_bg.jpg')" alt="">
+          <ul>
+            <li class="text-center">
+              <span>300+</span>
+              <p>DESTINATIONS</p>
+            </li>
+            <li class="text-center">
+              <span>5000+</span>
+              <p>TOURISTS</p>
+            </li>
+            <li class="text-center">
+              <span>150+</span>
+              <p>HOTELS</p>
+            </li>
+          </ul>
+        </v-col>
+        <v-col cols="6" class="pa-0">
+          <div class="d-flex flex-column align-start ga-5 travel_content">
+            <h2 class="text-h2">Travel Any Corner of The World With Us</h2>
+            <div class="d-flex flex-column ga-10">
+              <p>Would you explore nature paradise in the world, let’s find the best destination in world with us, Would you explore nature paradise in the world, let’s find the best destination in world with us. Would you explore nature paradise in the world, let’s find the best destination in world with us.</p>
+              <p>Would you explore nature paradise in the world, let’s find the best destination in world with us.</p>
+            </div>
+            <v-btn>Contact Us</v-btn>
+          </div>
+        </v-col>
+      </v-row>
+    </main-container>
+  </section>
+  <!-- Travel end -->
+
 </template>
 
 <script>
